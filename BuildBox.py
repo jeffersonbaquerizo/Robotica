@@ -1,4 +1,3 @@
-
 from robolink import *    # RoboDK API
 from robodk import *      # Robot toolbox
 
