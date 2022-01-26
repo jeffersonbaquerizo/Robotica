@@ -26,7 +26,7 @@ while True:
     robot.MoveJ(target_pose_in)
     RDK.RunProgram('WeldOn(ON)')
     sleep(1)
-    robot.setSpeed(10,10)
+    robot.setSpeed(100,100)
     target_pose_fin = transl(-125,125,5)*roty(-5*pi/6)
     robot.MoveL(target_pose_fin)
     RDK.setParam('BoolMove', 1)
@@ -46,7 +46,7 @@ while True:
     robot.MoveJ(target_pose_in)
     RDK.RunProgram('WeldOn(ON)')
     sleep(1)
-    robot.setSpeed(10,10)
+    robot.setSpeed(100,100)
     target_pose_fin = transl(125,-125,5)*roty(5.5*pi/6)
     robot.MoveL(target_pose_fin)
     RDK.setParam('BoolMove', 1)
@@ -65,7 +65,7 @@ while True:
     robot.MoveL(target_pose_fin)
     RDK.RunProgram('WeldOn(ON)')
     sleep(1)
-    robot.setSpeed(10,10)
+    robot.setSpeed(100,100)
     target_pose_in = transl(-125,125,5)*rotx(pi/12)*roty(-5*pi/6)
     robot.MoveL(target_pose_in)
 
@@ -91,7 +91,7 @@ while True:
     robot.MoveJ(target_pose_in)
     RDK.RunProgram('WeldOn(ON)')
     sleep(1)
-    robot.setSpeed(10,10)
+    robot.setSpeed(100,100)
     target_pose_fin = transl(-125,125,250)*rotx(pi/12)*roty(5*pi/6)
     robot.MoveL(target_pose_fin)
 
@@ -105,7 +105,7 @@ while True:
     robot.MoveL(target_pose_fin)
     RDK.RunProgram('WeldOn(ON)')
     sleep(1)
-    robot.setSpeed(10,10)
+    robot.setSpeed(100,100)
     target_pose_fin = transl(125,125,250)*rotx(pi/12)*roty(-3*pi/6)
     robot.MoveL(target_pose_fin)
 
@@ -127,7 +127,7 @@ while True:
     robot.MoveJ(target_pose_in)
     RDK.RunProgram('WeldOn(ON)')
     sleep(1)
-    robot.setSpeed(10,10)
+    robot.setSpeed(100,100)
     target_pose_fin = transl(125,125,250)*rotx(7*pi/6)
     robot.MoveL(target_pose_fin)
 
@@ -141,6 +141,5 @@ while True:
 
     RDK.setParam('BoolMove', 1)
     RDK.setParam('BoolWeld', 0)
-
 
 
