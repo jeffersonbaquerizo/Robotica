@@ -269,8 +269,9 @@ while i>=0:
 
     robot.MoveJ(target_pallet_final)
     robot.setPoseFrame(frame_pallet_final)
-    positionBox=transl(BoxPositionXYZ[int((n-i)/5-1)])*rotx(pi)
+    positionBox=transl(BoxPositionXYZ[int((n-i)/5-1)])*roty(-pi)
     robot.MoveJ(positionBox)
 
     TCP_Off(tool, frame_pallet_final)
     
+
